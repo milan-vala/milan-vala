@@ -44,7 +44,7 @@
   <rect width="300" height="300" fill="url(#bgGrad)"/>
 
   <!-- BASE PHOTO -->
-  <image href="https://github.com/milan-vala.png"
+  <image href="./photo.jpg"
          x="40" y="40" width="220" height="220"
          clip-path="url(#photoClip)" preserveAspectRatio="xMidYMid slice">
     <animateTransform attributeName="transform" type="translate"
