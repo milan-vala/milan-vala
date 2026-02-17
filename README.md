@@ -56,7 +56,7 @@ I'm a Full Stack Developer specializing in building responsive websites and mobi
 
 ## `> cat /tech_stack`
 
-![programming_languages](https://img.shields.io/badge/--%3E%20programming__languages-FF2D9B?style=flat-square&labelColor=0A0A0A&color=0A0A0A&logoColor=FF2D9B)
+**`// programming_languages`**
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-0A0A0A?style=for-the-badge&logo=javascript&logoColor=FF2D9B)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0A0A0A?style=for-the-badge&logo=typescript&logoColor=00D4FF)
@@ -108,18 +108,6 @@ I'm a Full Stack Developer specializing in building responsive websites and mobi
   └─────────────────────────────────────────────────────────────────────┘
 ```
 
----
-
-## `> github --stats milanvala`
-
-![Milan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=0A0A0A&title_color=FF2D9B&icon_color=00D4FF&text_color=FFFFFF&include_all_commits=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=0A0A0A&title_color=FF2D9B&text_color=FFFFFF&langs_count=8)
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=YOUR_GITHUB_USERNAME&hide_border=true&background=0A0A0A&ring=FF2D9B&fire=FF2D9B&currStreakLabel=00D4FF&sideLabels=FFFFFF&sideNums=FFFFFF&currStreakNum=FFFFFF&dates=666666)
-
----
-
 ## `> connect --open`
 
 ```
@@ -136,10 +124,10 @@ I'm a Full Stack Developer specializing in building responsive websites and mobi
   └──────────────────────────────────────────────────────────────────┘
 ```
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=firefoxbrowser&logoColor=FF2D9B)](https://your-portfolio.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=00D4FF)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![Instagram](https://img.shields.io/badge/Instagram-0A0A0A?style=for-the-badge&logo=instagram&logoColor=FF2D9B)](https://instagram.com/YOUR_INSTAGRAM)
-[![Email](https://img.shields.io/badge/Email-0A0A0A?style=for-the-badge&logo=gmail&logoColor=FFFFFF)](mailto:YOUR_EMAIL)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0A0A0A?style=for-the-badge&logo=firefoxbrowser&logoColor=FF2D9B)](https://milanvala.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=00D4FF)](https://linkedin.com/in/milan-vala)
+[![Instagram](https://img.shields.io/badge/Instagram-0A0A0A?style=for-the-badge&logo=instagram&logoColor=FF2D9B)](https://instagram.com/iam_kryptonian)
+[![Email](https://img.shields.io/badge/Email-0A0A0A?style=for-the-badge&logo=gmail&logoColor=FFFFFF)](mailto:dev.milanvala@gmail.com)
 
 ---
 
