@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 300 300" width="300" height="300">
+
+  <defs>
+
+    <!-- Circle clip for photo -->
+    <clipPath id="photoClip">
+      <circle cx="150" cy="150" r="110"/>
+    </clipPath>
+
+    <!-- Neon pink glow -->
+    <filter id="pinkGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Cyan glow -->
+    <filter id="cyanGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="300" height="3" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="300" height="1.5" fill="black" opacity="0.15"/>
+      <rect x="0" y="1.5" width="300" height="1.5" fill="transparent"/>
+    </pattern>
+
+    <!-- Radial bg gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1a0025"/>
+      <stop offset="100%" stop-color="#04040a"/>
+    </radialGradient>
+
+  </defs>
+
+  <!-- Background -->
+  <rect width="300" height="300" fill="url(#bgGrad)"/>
+
+  <!-- BASE PHOTO -->
+  <image href="https://github.com/milan-vala.png"
+         x="40" y="40" width="220" height="220"
+         clip-path="url(#photoClip)" preserveAspectRatio="xMidYMid slice">
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 0,0; 0,0; 0,0; 0,0; -3,0; 3,0; -2,1; 0,0; 0,0; 0,0; 0,0; 0,0; 2,0; 0,0"
+      dur="6s" repeatCount="indefinite" calcMode="discrete"/>
+  </image>
+
+  <!-- Scanlines over photo -->
+  <circle cx="150" cy="150" r="110" fill="url(#scanlines)" opacity="0.6"/>
+
+  <!-- Glitch flash bar 1 — pink -->
+  <rect x="40" y="130" width="220" height="5"
+        fill="#FF2D9B" opacity="0"
+        clip-path="url(#photoClip)">
+    <animate attributeName="opacity"
+      values="0;0;0;0;0;0;0.3;0;0;0;0;0;0;0.15;0"
+      dur="5s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="y"
+      values="130;130;130;130;130;130;125;130;130;130;130;130;130;175;130"
+      dur="5s" repeatCount="indefinite" calcMode="discrete"/>
+  </rect>
+
+  <!-- Glitch flash bar 2 — cyan -->
+  <rect x="40" y="180" width="220" height="3"
+        fill="#00D4FF" opacity="0"
+        clip-path="url(#photoClip)">
+    <animate attributeName="opacity"
+      values="0;0;0;0.2;0;0;0;0;0;0;0;0.1;0;0;0"
+      dur="7s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="y"
+      values="180;180;180;160;180;180;180;180;180;180;180;200;180;180;180"
+      dur="7s" repeatCount="indefinite" calcMode="discrete"/>
+  </rect>
+
+  <!-- NEON PINK MAIN RING -->
+  <circle cx="150" cy="150" r="112" fill="none"
+          stroke="#FF2D9B" stroke-width="2.5"
+          filter="url(#pinkGlow)">
+    <animate attributeName="opacity"
+      values="1;1;1;0.4;1;1;0.6;1;1;1;0.3;1;1"
+      dur="4s" repeatCount="indefinite" calcMode="discrete"/>
+  </circle>
+
+  <!-- Outer faint pink ring -->
+  <circle cx="150" cy="150" r="117" fill="none"
+          stroke="#FF2D9B" stroke-width="0.8" opacity="0.35"/>
+
+  <!-- CYAN DASHED ROTATING RING -->
+  <circle cx="150" cy="150" r="124" fill="none"
+          stroke="#00D4FF" stroke-width="1.5"
+          stroke-dasharray="18 12"
+          filter="url(#cyanGlow)" opacity="0.75">
+    <animateTransform attributeName="transform" type="rotate"
+      from="0 150 150" to="360 150 150"
+      dur="14s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- CORNER HUD BRACKETS -->
+  <g stroke="#00D4FF" stroke-width="2" filter="url(#cyanGlow)" opacity="0.9">
+    <line x1="18" y1="42" x2="18" y2="20"/>
+    <line x1="18" y1="20" x2="40" y2="20"/>
+  </g>
+  <g stroke="#00D4FF" stroke-width="2" filter="url(#cyanGlow)" opacity="0.9">
+    <line x1="282" y1="42" x2="282" y2="20"/>
+    <line x1="282" y1="20" x2="260" y2="20"/>
+  </g>
+  <g stroke="#00D4FF" stroke-width="2" filter="url(#cyanGlow)" opacity="0.9">
+    <line x1="18" y1="258" x2="18" y2="280"/>
+    <line x1="18" y1="280" x2="40" y2="280"/>
+  </g>
+  <g stroke="#00D4FF" stroke-width="2" filter="url(#cyanGlow)" opacity="0.9">
+    <line x1="282" y1="258" x2="282" y2="280"/>
+    <line x1="282" y1="280" x2="260" y2="280"/>
+  </g>
+
+  <!-- NEON DOTS at compass points -->
+  <circle cx="150" cy="36" r="3" fill="#FF2D9B" filter="url(#pinkGlow)">
+    <animate attributeName="opacity" values="1;0.2;1;0.7;1" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="264" r="3" fill="#FF2D9B" filter="url(#pinkGlow)">
+    <animate attributeName="opacity" values="0.5;1;0.3;1;0.5" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="36" cy="150" r="3" fill="#00D4FF" filter="url(#cyanGlow)">
+    <animate attributeName="opacity" values="1;0.4;0.9;0.2;1" dur="3.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="264" cy="150" r="3" fill="#00D4FF" filter="url(#cyanGlow)">
+    <animate attributeName="opacity" values="0.3;1;0.6;1;0.3" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- BOTTOM LABEL -->
+  <rect x="88" y="268" width="124" height="20" rx="2"
+        fill="#04040a" stroke="#FF2D9B" stroke-width="1"/>
+  <text x="150" y="282" text-anchor="middle"
+        font-family="monospace" font-size="10" fill="#FF2D9B" letter-spacing="2.5">
+    MILAN VALA
+    <animate attributeName="opacity"
+      values="1;1;1;0.2;1;1;1;0.5;1"
+      dur="7s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+  <circle cx="91" cy="278" r="2" fill="#00D4FF" opacity="0.9"/>
+  <circle cx="209" cy="278" r="2" fill="#00D4FF" opacity="0.9"/>
+
+</svg>
